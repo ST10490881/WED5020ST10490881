@@ -98,3 +98,15 @@ GreenFuture-SA/
     ├── content/
     ├── images/
     └── references/
+    
+  ### Part 2 – Visual Design and Responsive Styling
+
+- Created an external `style.css` stylesheet.
+- Applied a CSS reset and base styling across the website.
+- Added typography styling for headings, paragraphs and navigation.
+- Added Flexbox layout styling for the header and navigation.
+- Added colours, borders, rounded corners, shadows and hover/focus effects.
+- Added responsive styling for tablet and mobile screen sizes using CSS media queries.
+- Added responsive image styling to ensure images resize correctly on different screen sizes.
+- Added the viewport meta tag to all HTML pages for responsive display.
+- Tested the website at desktop, tablet and mobile screen size
