@@ -2,12 +2,22 @@
 <html lang="en">
 
 <head>
-    <!-- Basic information about the webpage -->
+    <!-- Basic information and SEO for the webpage -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenFuture SA | Projects</title>
+
+    <title>Environmental Projects | GreenFuture SA</title>
+
+    <meta name="description" content="Explore GreenFuture SA's environmental projects, including waste minimisation, community clean-ups, conservation and environmental education.">
+
+    <meta name="keywords" content="environmental projects, waste minimisation, community clean-up, conservation, environmental education, GreenFuture SA">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
+<script src="script.js"></script>
+</body>
+</html>
 
 <body>
 
@@ -27,19 +37,69 @@
         </nav>
     </header>
 
+    <section>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <h3>How can I get involved?</h3>
+        <button type="button" class="faq-toggle"
+            aria-expanded="false">
+            Show Answer
+        </button>
+        <p class="faq-answer" hidden>
+            You can get involved by volunteering, participating in
+            community clean-ups, or supporting environmental projects.
+        </p>
+    </div>
+
+    <div class="faq-item">
+        <h3>What does GreenFuture SA focus on?</h3>
+        <button type="button" class="faq-toggle"
+            aria-expanded="false">
+            Show Answer
+        </button>
+        <p class="faq-answer" hidden>
+            GreenFuture SA focuses on sustainability, waste minimisation,
+            conservation, and environmental education.
+        </p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Can schools participate?</h3>
+        <button type="button" class="faq-toggle"
+            aria-expanded="false">
+            Show Answer
+        </button>
+        <p class="faq-answer" hidden>
+            Yes. Schools can enquire about environmental education
+            and community sustainability activities.
+        </p>
+    </div>
+</section>
+
     <!-- Main website content -->
     <main>
 
-        <!-- Introduction to projects -->
         <section>
-            <h2>Our Projects</h2>
+    <h2>Our Projects</h2>
 
-            <p>
-                GreenFuture SA develops community-based environmental initiatives
-                that encourage sustainable living, environmental awareness and
-                responsible use of natural resources.
-            </p>
-        </section>
+    <p>
+        GreenFuture SA develops community-based environmental initiatives
+        that encourage sustainable living, environmental awareness and
+        responsible use of natural resources.
+    </p>
+
+    <label for="project-search">Search our projects:</label>
+
+    <input
+        type="search"
+        id="project-search"
+        placeholder="Try conservation or recycling..."
+        aria-label="Search environmental projects"
+    >
+
+    <p id="search-message" aria-live="polite"></p>
+</section>
 
         <!-- Waste minimisation project -->
         <section>
@@ -93,7 +153,7 @@
     <footer>
         <p>&copy; 2026 GreenFuture SA. All Rights Reserved.</p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 
 </html>

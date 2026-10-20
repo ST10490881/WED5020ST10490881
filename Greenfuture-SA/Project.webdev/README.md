@@ -110,3 +110,33 @@ GreenFuture-SA/
 - Added responsive image styling to ensure images resize correctly on different screen sizes.
 - Added the viewport meta tag to all HTML pages for responsive display.
 - Tested the website at desktop, tablet and mobile screen size
+
+Part 3: Improve Functionality and SEO
+
+JavaScript Functionality
+
+* Increased the ability to search for project information.
+
+* Introduced interactive FAQ sections to toggle answer visibility.
+
+Forms and Validation
+
+* Improved Volunteer Enquiry, Sponsor, and Contact forms.
+
+* Required-field validation and JavaScript alert messages added.
+
+* Thank-you messages were added after valid form submissions. These forms currently demonstrate client-side validation and do not submit or store the submissions.
+
+Search Engine Optimisation (SEO)
+
+* Added page-specific titles and meta descriptions.
+
+* Sitemap. Xml and robots. Txt files created and submitted.
+
+* Changed the url of the sitemap and robots file to the url of the live site.
+
+Deployment and Testing
+
+* Published the website with Netlify.
+
+* Tested functionality of search FAQ forms, required field validation, and all live links on page.

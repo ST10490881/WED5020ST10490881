@@ -2,10 +2,16 @@
 <html lang="en">
 
 <head>
-    <!-- Basic information about the webpage -->
+    <!-- Basic information and SEO for the webpage -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenFuture SA | Contact</title>
+
+    <title>Contact GreenFuture SA | Get in Touch</title>
+
+    <meta name="description" content="Get in touch with GreenFuture SA about environmental sustainability, community projects and conservation initiatives in South Africa.">
+
+    <meta name="keywords" content="contact GreenFuture SA, environmental enquiries, sustainability, conservation, community projects, South Africa">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -69,27 +75,59 @@
         <!-- Contact form -->
         <section>
             <h2>Send Us an Enquiry</h2>
+<form id="contact-form">
+    <label for="name">Full Name:</label>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        minlength="2"
+        maxlength="60"
+    >
 
-            <form>
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name">
+    <br><br>
 
-                <br><br>
+    <label for="email">Email Address:</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        required
+    >
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email">
+    <br><br>
 
-                <br><br>
+    <label for="message-type">Message Type:</label>
+    <select id="message-type" name="message-type" required>
+        <option value="">Select a message type</option>
+        <option value="General enquiry">General enquiry</option>
+        <option value="Volunteering">Volunteering</option>
+        <option value="Sponsorship">Sponsorship</option>
+        <option value="Environmental project">Environmental project</option>
+        <option value="Other">Other</option>
+    </select>
 
-                <label for="message">Message:</label>
-                <br>
-                <textarea id="message" name="message"
-                    rows="5" cols="40"></textarea>
+    <br><br>
 
-                <br><br>
+    <label for="message">Message:</label>
+    <br>
+    <textarea
+        id="message"
+        name="message"
+        rows="5"
+        cols="40"
+        required
+        minlength="10"
+        maxlength="1000"
+    ></textarea>
 
-                <button type="submit">Send Enquiry</button>
-            </form>
+    <br><br>
+
+    <button type="submit">Send Enquiry</button>
+    <p id="contact-feedback" aria-live="polite"></p>
+</form>
+     
         </section>
 
     </main>
@@ -98,7 +136,7 @@
     <footer>
         <p>&copy; 2026 GreenFuture SA. All Rights Reserved.</p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 
 </html>

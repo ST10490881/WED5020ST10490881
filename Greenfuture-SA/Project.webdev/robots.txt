@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://super-treacle-2e2c78.netlify.app/sitemap.xml
