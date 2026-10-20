@@ -141,6 +141,48 @@ Deployment and Testing
 
 * Tested functionality of search FAQ forms, required field validation, and all live links on page.
 
+Responsive Design and Accessibility
+
+* Further maintained the style of the website by keeping external CSS stylesheet.
+
+* Tested the website's layout and interactive elements in the browser.
+
+* Provided alternative text on images where relevant.
+
+* Added a zoom cursor on images to signal the ability to open a lightbox.
+
+ Deployment and Testing
+
+* Created the GreenFuture SA website with Netlify.
+
+* Tested the project search feature on the actual site.
+
+* Tested FAQ show-and-hide feature.
+
+* All of the Volunteer Enquiry, Sponsor, and Contact forms have been tested.
+
+* Tested the validation on required-fields and feedback messages of the form.
+
+* Tested image lightbox on the published website.
+
+* Make sure images are displaying on those website pages.
+
+* Pushed website updates and README modifications to the GitHub repo.
+
+ Changelog
+
+* Documented the JavaScript search and FAQ feature.
+
+* Documented the process of form creation and client-side validation.
+
+* Recorded SEO Documents with page metadata.
+
+* Recorded the image lightbox implementation.
+
+* Documentation of tests and deployment.
+
+* Recognized outstanding form-processing requirements.
+
 References
 
 * Mozilla Developer Network (MDN) (n.d.) HTML: HyperText Markup Language. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML
