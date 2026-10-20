@@ -107,7 +107,7 @@ if (sponsorForm && sponsorFeedback) {
         sponsorForm.reset();
     });
 }
-// GreenFuture SA - Contact Form Validation
+// GreenFuture SA - Contact Form Validation and Email Preparation
 
 const contactForm = document.getElementById("contact-form");
 const contactFeedback = document.getElementById("contact-feedback");
@@ -122,15 +122,31 @@ if (contactForm && contactFeedback) {
         }
 
         const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
         const messageType = document.getElementById("message-type").value;
+        const message = document.getElementById("message").value.trim();
+
+        const recipient = "ST10490881@rcconnect.edu.zas";
+        const subject = encodeURIComponent(
+            "GreenFuture SA - " + messageType
+        );
+
+        const body = encodeURIComponent(
+            "Name: " + name + "\n" +
+            "Email: " + email + "\n" +
+            "Message type: " + messageType + "\n\n" +
+            "Message:\n" + message
+        );
 
         contactFeedback.textContent =
-            "Thank you, " + name + "! Your " +
-            messageType.toLowerCase() +
-            " has passed validation. Please contact GreenFuture SA directly to arrange submission.";
+            "Your details are ready. Your email application will open so you can review and send your message.";
 
-        contactForm.reset();
+        window.location.href =
+            "mailto:" + recipient +
+            "?subject=" + subject +
+            "&body=" + body;
     });
+}
 }
 /* Image lightbox for GreenFuture SA */
 document.addEventListener("DOMContentLoaded", function () {

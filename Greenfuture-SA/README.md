@@ -190,3 +190,4 @@ References
 * Mozilla Developer Network (MDN) (n.d.) JavaScript. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 * Google Search Central (n.d.) SEO Starter Guide. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 * Netlify (n.d.) Netlify Documentation. Available at: https://docs.netlify.com/
+s
