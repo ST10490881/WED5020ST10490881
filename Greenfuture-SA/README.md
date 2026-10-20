@@ -140,3 +140,11 @@ Deployment and Testing
 * Published the website with Netlify.
 
 * Tested functionality of search FAQ forms, required field validation, and all live links on page.
+
+References
+
+* Mozilla Developer Network (MDN) (n.d.) HTML: HyperText Markup Language. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML
+* Mozilla Developer Network (MDN) (n.d.) CSS: Cascading Style Sheets. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS
+* Mozilla Developer Network (MDN) (n.d.) JavaScript. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+* Google Search Central (n.d.) SEO Starter Guide. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+* Netlify (n.d.) Netlify Documentation. Available at: https://docs.netlify.com/
