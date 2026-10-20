@@ -132,3 +132,52 @@ if (contactForm && contactFeedback) {
         contactForm.reset();
     });
 }
+/* Image lightbox for GreenFuture SA */
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll("main img");
+
+    const lightbox = document.createElement("div");
+    lightbox.id = "image-lightbox";
+    lightbox.style.cssText = `
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        cursor: pointer;
+    `;
+
+    const enlargedImage = document.createElement("img");
+    enlargedImage.style.cssText = `
+        max-width: 90%;
+        max-height: 85vh;
+        object-fit: contain;
+        border: 3px solid white;
+        border-radius: 8px;
+    `;
+
+    lightbox.appendChild(enlargedImage);
+    document.body.appendChild(lightbox);
+
+    images.forEach(function (image) {
+        image.style.cursor = "zoom-in";
+        image.addEventListener("click", function () {
+            enlargedImage.src = image.src;
+            enlargedImage.alt = image.alt;
+            lightbox.style.display = "flex";
+        });
+    });
+
+    lightbox.addEventListener("click", function () {
+        lightbox.style.display = "none";
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            lightbox.style.display = "none";
+        }
+    });
+});
