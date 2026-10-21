@@ -95,7 +95,7 @@ const volunteerForm = document.getElementById("volunteer-form");
 const volunteerFeedback = document.getElementById("volunteer-feedback");
 
 if (volunteerForm && volunteerFeedback) {
-    volunteerForm.addEventListener("submit", function (event) {
+    volunteerForm.addEventListener("submit", async function (event) {
         event.preventDefault();
 
         if (!volunteerForm.checkValidity()) {
@@ -103,13 +103,32 @@ if (volunteerForm && volunteerFeedback) {
             return;
         }
 
-        const name = document.getElementById("volunteer-name").value.trim();
+        const formData = new FormData(volunteerForm);
 
-        volunteerFeedback.textContent =
-            "Thank you, " + name +
-            "! Your volunteer enquiry is valid. Opportunities depend on " +
-            "current project needs. Please use the Contact page to prepare " +
-            "an email. Your enquiry has not been sent automatically.";
+        try {
+            const response = await fetch("/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: new URLSearchParams(formData).toString()
+            });
+
+            if (!response.ok) {
+                throw new Error("Submission failed");
+            }
+
+            const name = document.getElementById("volunteer-name").value.trim();
+
+            volunteerFeedback.textContent =
+                "Thank you, " + name +
+                "! Your volunteer enquiry has been submitted successfully.";
+
+            volunteerForm.reset();
+        } catch (error) {
+            volunteerFeedback.textContent =
+                "Sorry, your enquiry could not be submitted. Please try again later.";
+        }
     });
 }
 
@@ -119,7 +138,7 @@ const sponsorForm = document.getElementById("sponsor-form");
 const sponsorFeedback = document.getElementById("sponsor-feedback");
 
 if (sponsorForm && sponsorFeedback) {
-    sponsorForm.addEventListener("submit", function (event) {
+    sponsorForm.addEventListener("submit", async function (event) {
         event.preventDefault();
 
         if (!sponsorForm.checkValidity()) {
@@ -127,13 +146,32 @@ if (sponsorForm && sponsorFeedback) {
             return;
         }
 
-        const name = document.getElementById("sponsor-name").value.trim();
+        const formData = new FormData(sponsorForm);
 
-        sponsorFeedback.textContent =
-            "Thank you, " + name +
-            "! Your sponsorship enquiry is valid. Sponsorship options and " +
-            "availability need to be discussed with GreenFuture SA. " +
-            "Your enquiry has not been sent automatically.";
+        try {
+            const response = await fetch("/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: new URLSearchParams(formData).toString()
+            });
+
+            if (!response.ok) {
+                throw new Error("Submission failed");
+            }
+
+            const name = document.getElementById("sponsor-name").value.trim();
+
+            sponsorFeedback.textContent =
+                "Thank you, " + name +
+                "! Your sponsorship enquiry has been submitted successfully.";
+
+            sponsorForm.reset();
+        } catch (error) {
+            sponsorFeedback.textContent =
+                "Sorry, your sponsorship enquiry could not be submitted. Please try again later.";
+        }
     });
 }
 
