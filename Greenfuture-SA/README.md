@@ -190,4 +190,32 @@ References
 * Mozilla Developer Network (MDN) (n.d.) JavaScript. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 * Google Search Central (n.d.) SEO Starter Guide. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 * Netlify (n.d.) Netlify Documentation. Available at: https://docs.netlify.com/
-s
+
+### Part 3 Boosting Functionality and SEO.
+
+* **JavaScript AJAX form submission:** Updated the Volunteer and Sponsorship Enquiry forms to submit data asynchronously to Netlify. Added client-side validation, success messages, error handling, and form reset behaviour after successful submission. Tested both forms on the deployed website and confirmed that submissions appeared in the Netlify Forms dashboard.
+
+* **Contact form:** Preserved the validation and email creating functionality of the contact form. The contact form creates an email with the name, email address, message type and message of the visitor to [ST10490881@rcconnect.edu.za](mailto: ST10490881@rcconnect.edu.za).
+
+* **Image gallery:** used a lightbox to show images of the website in a larger size on a black background, allowing users to close the lightbox by clicking the background or pressing Escape.
+
+* **Dynamic project search:** Added JavaScript search functionality to filter project content and display a message when no matching results are found.
+
+* **FAQ accordion:** clicking on answers to questions in the FAQ section will now expand or hide the answer.
+
+* **Interactive map:** Embedded an OpenStreetMap map in the Contact page to allow visitors to explore the Cape Town area.
+
+* Added smooth hover effects to images and buttons using CSS animations and transitions, such as a gentle image zoom and slight button movement. Provided compatibility for users who have enabled reduced motion preferences.
+
+* **SEO enhancements:** page-specific titles and meta descriptions, descriptive alternative text to all images, internal navigation links, a sitemap. Xml file, and a robots. Txt file.
+
+* Responsive design and usability: testing has continued on the layout of pages and related navigation, forms, and other interactive features of the website in the browser.
+
+* **Deployment and version control:** made website updates by committing changes to GitHub and pushing them to the remote repository. Used Netlify to deploy the site and verified the updated form functionality on the live website.
+
+* **Testing note:** Volunteer and sponsorship submissions were confirmed in Netlify Forms. The contact form generates an email for the visitor to check and send. Off-page SEO activities and any feedback-specific changes from Part 2 should be documented only when actually completed.
+* Mozilla Developer Network (MDN) (n.d.) *JavaScript*. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript (Accessed: 21 October 2026).
+* Mozilla Developer Network (MDN) (n.d.) *HTML forms*. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms (Accessed: 21 October 2026).
+* Google Search Central (n.d.) *SEO Starter Guide*. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide (Accessed: 21 October 2026).
+* Netlify (n.d.) *Forms setup*. Available at: https://docs.netlify.com/manage/forms/setup/ (Accessed: 21 October 2026).
+* OpenStreetMap (n.d.) *Copyright and Licence*. Available at: https://www.openstreetmap.org/copyright (Accessed: 21 October 2026).
