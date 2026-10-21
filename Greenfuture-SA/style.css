@@ -236,3 +236,38 @@ img {
     max-width: 100%;
     height: auto;
 }
+/* Part 3: Smooth hover animations */
+
+main img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+button,
+input[type="submit"] {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    main img,
+    button,
+    input[type="submit"] {
+        transition: none;
+    }
+
+    main img:hover,
+    button:hover,
+    input[type="submit"]:hover {
+        transform: none;
+    }
+}
