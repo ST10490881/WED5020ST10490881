@@ -61,7 +61,8 @@
                 sustainability projects, environmental education activities and
                 conservation initiatives.
             </p>
-<form id="volunteer-form">
+<form name="volunteer" method="POST" data-netlify="true" id="volunteer-form">
+    <input type="hidden" name="form-name" value="volunteer">
     <label for="volunteer-name">Full Name:</label>
     <input
         type="text"
@@ -113,7 +114,8 @@
                 can enquire about sponsorship opportunities and environmental projects.
             </p>
             
-<form id="sponsor-form">
+<form name="sponsor" method="POST" data-netlify="true" id="sponsor-form">
+    <input type="hidden" name="form-name" value="sponsor">
     <label for="sponsor-name">Name or Organisation:</label>
     <input
         type="text"

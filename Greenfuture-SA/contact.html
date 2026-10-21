@@ -75,7 +75,8 @@
         <!-- Contact form -->
         <section>
             <h2>Send Us an Enquiry</h2>
-<form id="contact-form">
+<form name="contact" method="POST" data-netlify="true" id="contact-form">
+    <input type="hidden" name="form-name" value="contact">
     <label for="name">Full Name:</label>
     <input
         type="text"
